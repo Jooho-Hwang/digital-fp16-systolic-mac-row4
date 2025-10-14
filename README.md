@@ -1,4 +1,4 @@
-# FP16 Systolic MAC Row (4-Stage)
+# FP16 Systolic MAC Unit
 
 A half-precision (FP16) floating-point multiply–accumulate (MAC) array, implemented in Verilog HDL.  
 The design consists of **purely combinational FPMUL / FPADD cores** and a **pipelined MAC chain** of four units (systolic row).  
@@ -42,22 +42,22 @@ This repository follows a standardized structure for Verilog projects:
 ## Directory Structure
 
 ```bash
-digital_fp16_systolic_mac_row4/
+digital_fp16_systolic_mac_unit/
 ├─ README.md
 ├─ LICENSE
 ├─ rtl/
-│ ├─ fp16_defs.vh    # Common FP16 constants/macros
-│ ├─ fp_mul.v        # FP16 multiplier (combinational)
-│ ├─ fp_add.v        # FP16 adder (combinational)
-│ ├─ fp_mac.v        # Pipelined MAC unit
-│ └─ mac_row4.v      # 4-MAC systolic row
+│ ├─ fp16_defs.vh      # Common FP16 constants/macros
+│ ├─ fp_mul.v          # FP16 multiplier (combinational)
+│ ├─ fp_add.v          # FP16 adder (combinational)
+│ ├─ fp_mac.v          # Pipelined MAC unit
+│ └─ mac_row4.v        # 4-MAC systolic row
 ├─ sim/
-│ ├─ tb_fp_mul.v     # Unit testbench for fp_mul
-│ ├─ tb_fp_add.v     # Unit testbench for fp_add
-│ ├─ tb_fp_mac.v     # Testbench for pipelined MAC
-│ └─ tb_mac_row4.v   # Testbench for 4-MAC systolic row
+│ ├─ tb_fp_mul.v       # Unit testbench for fp_mul
+│ ├─ tb_fp_add.v       # Unit testbench for fp_add
+│ ├─ tb_fp_mac.v       # Testbench for pipelined MAC
+│ └─ tb_mac_row4.v     # Testbench for 4-MAC systolic row
 └─ docs/
-└─ block diagram.jpg # Architecture diagram
+  └─ block diagram.jpg # Architecture diagram
 ```
 
 ## How to Build & Run
