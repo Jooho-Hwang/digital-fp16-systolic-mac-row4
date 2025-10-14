@@ -46,16 +46,16 @@ digital_fp16_systolic_mac_row4/
 ├─ README.md
 ├─ LICENSE
 ├─ rtl/
-│ ├─ fp16_defs.vh # Common FP16 constants/macros
-│ ├─ fp_mul.v # FP16 multiplier (combinational)
-│ ├─ fp_add.v # FP16 adder (combinational)
-│ ├─ fp_mac.v # Pipelined MAC unit
-│ └─ mac_row4.v # 4-MAC systolic row
+│ ├─ fp16_defs.vh    # Common FP16 constants/macros
+│ ├─ fp_mul.v        # FP16 multiplier (combinational)
+│ ├─ fp_add.v        # FP16 adder (combinational)
+│ ├─ fp_mac.v        # Pipelined MAC unit
+│ └─ mac_row4.v      # 4-MAC systolic row
 ├─ sim/
-│ ├─ tb_fp_mul.v # Unit testbench for fp_mul
-│ ├─ tb_fp_add.v # Unit testbench for fp_add
-│ ├─ tb_fp_mac.v # Testbench for pipelined MAC
-│ └─ tb_mac_row4.v # Testbench for 4-MAC systolic row
+│ ├─ tb_fp_mul.v     # Unit testbench for fp_mul
+│ ├─ tb_fp_add.v     # Unit testbench for fp_add
+│ ├─ tb_fp_mac.v     # Testbench for pipelined MAC
+│ └─ tb_mac_row4.v   # Testbench for 4-MAC systolic row
 └─ docs/
 └─ block diagram.jpg # Architecture diagram
 ```
