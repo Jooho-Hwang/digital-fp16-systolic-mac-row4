@@ -107,10 +107,7 @@ Testbench coverage:
 - Overflow weight case
 
 ## Lessons Learned
-Separating purely combinational FP cores from pipelined wrappers makes timing closure easier and the design reusable.
-
-Using a common header (fp16_defs.vh) for constants prevents mismatches between modules.
-
-Guard-bit rounding is simple to implement but requires careful handling of carry into the exponent.
-
-Preloading weights and streaming inputs is an efficient approach for systolic array designs.
+- Separating purely combinational FP cores from pipelined wrappers makes timing closure easier and the design reusable.
+- Using a common header (fp16_defs.vh) for constants prevents mismatches between modules.
+- Guard-bit rounding is simple to implement but requires careful handling of carry into the exponent.
+- Preloading weights and streaming inputs is an efficient approach for systolic array designs.
